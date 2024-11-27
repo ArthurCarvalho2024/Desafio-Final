@@ -1,0 +1,32 @@
+.boxinitial {
+  //border: solid 2px red;
+  height: 30vh;
+
+  .boxRedes {
+    //border: solid 5px red;
+    height: 20vh;
+    background-color: #005695;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+  }
+  nav {
+    //border: solid 2px yellow;
+    width: 15vw; //o justify content funciona se botar width pois aumenta a caixa, e se não houver widht o diplay flex adaptará as imagens em uma caixa perfeitamente fechada, e a widht ela abre mais essa caixa, permitindo a organização
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.boxEnd {
+  background-color: #232020;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}

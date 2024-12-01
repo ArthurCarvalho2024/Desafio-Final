@@ -15,8 +15,8 @@
 }
 
 .devoDoar {
-  height: 80vh;
-  //border: solid red;
+  height: 90vh;
+  //border: solid blue;
   div {
     //border: solid yellow;
     height: 15vh;
@@ -51,6 +51,56 @@
       text-align: center;
       width: 80%;
       font-size: 20px;
+    }
+  }
+}
+
+//---------------------------------------------------------------------------------------------------------------------------------------
+
+@media (max-width: 390px) {
+  .banner {
+    background-size: 131vw 41vh;
+    width: 120vw;
+    height: 40vh;
+    h2 {
+      font-size: 30px;
+      text-align: center;
+      height: 15vh;
+      width: 90vw;
+      margin-left: 28px;
+    }
+  }
+  .devoDoar {
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    justify-content: baseline;
+    div {
+      padding-top: 6vh;
+      height: 10vh;
+      width: 100vw;
+      padding-left: 10px;
+    }
+  }
+  .boxCard {
+    height: 120vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    article {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 73vw;
+      height: 25vh;
+      p {
+        font-size: 15px;
+        text-align: center;
+      }
     }
   }
 }

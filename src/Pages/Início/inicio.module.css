@@ -1,0 +1,50 @@
+.banner {
+  background-image: url("../../assets/pessoaLivro.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+}
+.banner h2 {
+  color: white;
+  margin-left: 150px;
+  font-size: 40px;
+  width: 27vw;
+}
+
+.devoDoar {
+  height: 80vh;
+}
+.devoDoar div {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+}
+.devoDoar div h2 {
+  font-size: 30px;
+  margin-left: 60px;
+  color: #005695;
+}
+
+.boxCard {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.boxCard article {
+  width: 17%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgba(1, 87, 148, 0.3019607843);
+  border-radius: 10px;
+}
+.boxCard article p {
+  text-align: center;
+  width: 80%;
+  font-size: 20px;
+}/*# sourceMappingURL=inicio.module.css.map */

@@ -1,0 +1,28 @@
+.boxinitial {
+  height: 30vh;
+}
+.boxinitial .boxRedes {
+  height: 20vh;
+  background-color: #005695;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+}
+.boxinitial nav {
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boxEnd {
+  background-color: #232020;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}/*# sourceMappingURL=footer.module.css.map */

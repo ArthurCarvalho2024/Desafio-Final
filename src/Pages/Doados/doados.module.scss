@@ -1,0 +1,47 @@
+.boxDoados {
+  //border: solid 2px red;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.boxCard {
+  width: 85vw;
+  height: 60vh;
+  //border: solid 2px green;
+  article {
+    border: solid 2px #005695;
+    width: 12vw;
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+  }
+}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+@media (max-width: 390px) {
+  .boxDoados {
+    height: 70vh;
+    h2 {
+      padding-top: 45px;
+    }
+  }
+  .boxCard {
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+    width: 99vw;
+    height: 70vh;
+    article {
+      width: 60vw;
+      height: 31vh;
+      display: flex;
+      margin-left: 77px;
+    }
+  }
+}

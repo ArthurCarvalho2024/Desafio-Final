@@ -9,7 +9,7 @@ import S from "./header.module.scss";
 export default function header() {
   return (
     <BrowserRouter>
-      <header>
+      <header className={S.headerBox}>
         <section className={S.boxLogo}>
           <img src={livroLogo} alt="Logo de um livro aberto" />
           <h1>Livros Vai na Web</h1>

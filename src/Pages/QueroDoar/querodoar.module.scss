@@ -1,9 +1,118 @@
 .principal {
-  border: solid 3px red;
+  //border: solid 3px green;
   height: 80vh;
   display: flex;
   justify-content: center;
 }
 
-//.container {
-//}
+.container {
+  //border: solid 2px greenyellow;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  h2 {
+    text-align: center;
+  }
+}
+
+.titleBox {
+  //border: solid 2px blue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20vw;
+  height: 10vh;
+  color: #005695;
+}
+
+.formsBox {
+  border: solid 3px #005695;
+  border-radius: 10px;
+  width: 25vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .button {
+    background-color: #005695;
+    width: 11vw;
+    height: 6vh;
+    color: white;
+    font-size: 20px;
+    padding-top: 11px;
+  }
+  .inputBox {
+    //border: solid 2px yellow;
+    padding-top: 2vh;
+  }
+  //input:nth-child(1) { serve para pegar a propriedade de um item
+  input {
+    border: solid 2px #005695;
+    border-radius: 10px;
+    width: 18vw;
+    height: 5vh;
+    padding: 15px;
+    margin: 20px;
+    display: flex;
+    outline: none;
+    padding-left: 20px;
+    &::placeholder {
+      color: black;
+    }
+  }
+}
+
+//--------------------------------------------------------------------------------------------------------
+@media (max-width: 390px) {
+  .principal {
+    height: 90vh;
+  }
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 10vh;
+
+    h2 {
+      padding-bottom: 80px;
+      padding-top: 40px;
+      font-size: 20px;
+      margin-left: 40px;
+      margin-right: 40px;
+      text-align: center;
+    }
+  }
+  .titleBox {
+    width: 85vw;
+    height: 27vh;
+    display: flex;
+    align-items: center;
+  }
+  .formsBox {
+    width: 90vw;
+    height: 57vh;
+    .button {
+      width: 40vw;
+      height: 7vh;
+    }
+  }
+  .inputBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 85vw;
+    height: 40vh;
+    margin: -20px;
+
+    input {
+      padding: 11px;
+      width: 60vw;
+      height: 2vh;
+      border-radius: 50px;
+      margin: 0;
+    }
+  }
+}

@@ -60,7 +60,7 @@
 
 //-------------------------------------------------------------------------------------------------------------------------------------------//
 
-@media (max-width: 390px) {
+@media (max-width: 395px) {
   .headerBox {
     display: flex;
     flex-direction: column;
@@ -89,6 +89,27 @@
       width: 90vw;
       display: flex;
     }
+  }
+
+  .boxInput {
+    display: none;
+  }
+}
+
+@media (min-width: 396px) and (max-width: 676px) {
+  .headerBox {
+    width: 100%;
+    height: 30vh;
+  }
+  .boxMenu {
+    //flex-wrap
+    width: 40vw;
+    height: 1vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .boxLogo {
+    width: 90vw;
   }
 
   .boxInput {

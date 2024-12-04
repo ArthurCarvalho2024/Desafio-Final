@@ -1,7 +1,8 @@
 .banner {
   background-image: url("../../assets/pessoaLivro.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   height: 88vh;
   display: flex;
   align-items: center;
@@ -57,7 +58,7 @@
 
 //---------------------------------------------------------------------------------------------------------------------------------------
 
-@media (max-width: 390px) {
+@media (max-width: 395px) {
   .banner {
     background-size: 131vw 40vh;
     width: 120vw;
@@ -81,7 +82,16 @@
       padding-top: 6vh;
       height: 10vh;
       width: 100vw;
-      padding-left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      h2 {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+      }
     }
   }
   .boxCard {
@@ -101,6 +111,36 @@
         font-size: 15px;
         text-align: center;
       }
+    }
+  }
+}
+
+@media (min-width: 396px) and (max-width: 676px) {
+  .banner {
+    height: 20vh;
+    h2 {
+      font-size: 50px;
+    }
+  }
+  .devoDoar {
+    border: solid 2px red;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+      border: solid 2px red;
+    }
+  }
+  .boxCard {
+    border: solid 2px green;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    article {
+      height: 200px;
+      width: 200px;
     }
   }
 }

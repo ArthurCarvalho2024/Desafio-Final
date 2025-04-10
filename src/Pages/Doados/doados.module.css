@@ -1,22 +1,65 @@
 .boxDoados {
-  height: 70vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+}
+.boxDoados h2 {
+  height: 10vh;
+  display: flex;
+  align-items: center;
 }
 
 .boxCard {
+  min-height: 70vh;
   width: 85vw;
-  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: solid 2px green;
 }
 .boxCard article {
-  border: solid 2px #005695;
-  width: 12vw;
-  height: 24vh;
+  border: solid 3px #005695;
+  width: 200px;
+  height: 32vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  border-radius: 15px;
+  border-radius: 13px;
+}
+.boxCard article .titulo {
+  font-weight: 780;
+}
+.boxCard article .categoria {
+  font-style: normal;
+}
+.boxCard article .autor {
+  font-style: italic;
+}
+.boxCard article img {
+  width: 40%;
+}
+
+@media (max-width: 390px) {
+  .boxDoados {
+    height: 70vh;
+  }
+  .boxDoados h2 {
+    padding-top: 45px;
+  }
+  .boxCard {
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+    width: 99vw;
+    height: 70vh;
+  }
+  .boxCard article {
+    width: 60vw;
+    height: 31vh;
+    display: flex;
+    margin-left: 77px;
+  }
 }/*# sourceMappingURL=doados.module.css.map */

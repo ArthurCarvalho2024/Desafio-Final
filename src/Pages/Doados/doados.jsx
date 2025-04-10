@@ -17,19 +17,13 @@ export default function Doados() {
   return (
     <section className={S.boxDoados}>
       <h2>Livros Doados</h2>
-      <section className={S.boxCard}>
-        <article>
-          <img src={livro} alt="" />
-          <h3>O Protagonista</h3>
-          <p>Susanne Andrade</p>
-          <p>Ficção</p>
-        </article>
+      <section className={S.boxCard}> 
         {livros.map((item)=>(
           <article key={item.id}>
-          <img src={item.imagem_url} alt="" />
-          <h3>{item.titulo}</h3>
-          <p>{item.categoria}</p>
-          <p>{item.autor}</p>
+          <img src={item.imagem_url} alt={`Livro: ${item.titulo}`} />
+          <h3 className={S.titulo}>{item.titulo}</h3>
+          <p className={S.categoria}>{item.categoria}</p>
+          <p className={S.autor}>{item.autor}</p>
           </article>
         ))}
       </section>

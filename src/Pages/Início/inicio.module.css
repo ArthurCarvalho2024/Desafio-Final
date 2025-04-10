@@ -1,7 +1,8 @@
 .banner {
   background-image: url("../../assets/pessoaLivro.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   height: 88vh;
   display: flex;
   align-items: center;
@@ -14,7 +15,7 @@
 }
 
 .devoDoar {
-  height: 80vh;
+  height: 90vh;
 }
 .devoDoar div {
   height: 15vh;
@@ -47,4 +48,89 @@
   text-align: center;
   width: 80%;
   font-size: 20px;
+}
+
+@media (max-width: 395px) {
+  .banner {
+    background-size: 131vw 40vh;
+    width: 120vw;
+    height: 40vh;
+  }
+  .banner h2 {
+    font-size: 26px;
+    text-align: center;
+    height: 16vh;
+    width: 70vw;
+    margin-left: 55px;
+  }
+  .devoDoar {
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    justify-content: baseline;
+  }
+  .devoDoar div {
+    padding-top: 6vh;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .devoDoar div h2 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .boxCard {
+    height: 120vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .boxCard article {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 73vw;
+    height: 25vh;
+  }
+  .boxCard article p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media (min-width: 396px) and (max-width: 676px) {
+  .banner {
+    height: 20vh;
+  }
+  .banner h2 {
+    font-size: 50px;
+  }
+  .devoDoar {
+    border: solid 2px red;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .devoDoar div {
+    border: solid 2px red;
+  }
+  .boxCard {
+    border: solid 2px green;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .boxCard article {
+    height: 200px;
+    width: 200px;
+  }
 }/*# sourceMappingURL=inicio.module.css.map */

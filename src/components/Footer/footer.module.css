@@ -1,8 +1,8 @@
 .boxinitial {
-  height: 30vh;
+  height: 25vh;
 }
 .boxinitial .boxRedes {
-  height: 20vh;
+  height: 16vh;
   background-color: #005695;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
   color: white;
 }
 .boxinitial nav {
-  width: 15vw;
+  width: 11vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,4 +25,30 @@
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+@media (max-width: 390px) {
+  .boxRedes {
+    display: flex;
+    flex-direction: column;
+  }
+  .boxRedes h3 {
+    padding-top: 20px;
+  }
+  .boxRedes nav {
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+  }
+  .boxEnd {
+    text-align: center;
+    font-size: 17px;
+    padding: 40px;
+  }
+}
+@media (min-width: 396px) and (max-width: 676px) {
+  .boxRedes nav {
+    width: 160px;
+  }
 }/*# sourceMappingURL=footer.module.css.map */
